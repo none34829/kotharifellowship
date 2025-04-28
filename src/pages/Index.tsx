@@ -41,9 +41,6 @@ const Index = () => {
       <FellowshipOverview />
       <WhoSection />
       <HowSection />
-      <div className="container mx-auto px-4">
-        <Separator className="my-8 bg-fellowship-gold/30 h-0.5" />
-      </div>
       <ManjiStory />
       <GrantorsSection />
       <InspirationSection />
