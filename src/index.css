@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
 @import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800,400,300,600&display=swap');
 
@@ -70,7 +71,8 @@
     .animate-fade-in-slow,
     .animate-fade-in-slower,
     .animate-rotate-slow,
-    .animate-scale-in {
+    .animate-scale-in,
+    .marquee-content {
       animation: none !important;
       transform: none !important;
     }

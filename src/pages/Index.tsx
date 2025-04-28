@@ -10,6 +10,7 @@ import GrantorsSection from "@/components/GrantorsSection";
 import InspirationSection from "@/components/InspirationSection";
 import MarqueeSection from "@/components/MarqueeSection";
 import Footer from "@/components/Footer";
+import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   // Smooth scroll to anchor links
@@ -40,6 +41,9 @@ const Index = () => {
       <FellowshipOverview />
       <WhoSection />
       <HowSection />
+      <div className="container mx-auto px-4">
+        <Separator className="my-8 bg-fellowship-gold/30 h-0.5" />
+      </div>
       <ManjiStory />
       <GrantorsSection />
       <InspirationSection />

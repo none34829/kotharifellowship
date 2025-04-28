@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Separator } from "@/components/ui/separator";
 
 const MarqueeSection = () => {
   const marqueeText = "BUILD • DREAM • CREATE • INNOVATE • GROW • LEAD • INSPIRE • TRANSFORM • ";

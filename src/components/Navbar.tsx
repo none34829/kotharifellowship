@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, ArrowRight } from 'lucide-react';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 interface NavItemProps {
   href: string;
@@ -49,13 +50,13 @@ const Navbar = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'py-3 bg-white/90 shadow-md backdrop-blur-md' : 'py-6'
+        isScrolled ? 'py-3 bg-background/90 shadow-md backdrop-blur-md dark:bg-background/80' : 'py-6'
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <a href="#" className="text-2xl font-display font-bold">
-            <span className={isScrolled ? "gradient-text" : ""}>KF</span>
+          <a href="#" className="text-lg md:text-xl font-display font-bold">
+            <span className={isScrolled ? "gradient-text" : ""}>Kothari Fellowship</span>
           </a>
           
           {/* Desktop Navigation */}
@@ -66,11 +67,12 @@ const Navbar = () => {
             <NavItem href="#why">Why</NavItem>
             <NavItem href="#grantors">Grantors</NavItem>
             
-            <div className="ml-4">
+            <div className="ml-4 flex items-center">
+              <ThemeToggle />
               <Button 
                 size="sm" 
                 className={`group rounded-full text-sm ${
-                  isScrolled ? 'bg-fellowship-gold hover:bg-fellowship-gold/90 text-black' : 'bg-white hover:bg-white/90 text-black'
+                  isScrolled ? 'bg-fellowship-gold hover:bg-fellowship-gold/90 text-black' : 'bg-white hover:bg-white/90 text-black dark:bg-fellowship-gold dark:hover:bg-fellowship-gold/90 dark:text-black'
                 }`}
               >
                 <span>Apply now</span>
@@ -80,19 +82,22 @@ const Navbar = () => {
           </nav>
           
           {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden text-foreground hover:text-fellowship-gold focus:outline-none"
-            onClick={toggleMobileMenu}
-            aria-label="Toggle mobile menu"
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeToggle />
+            <button 
+              className="text-foreground hover:text-fellowship-gold focus:outline-none"
+              onClick={toggleMobileMenu}
+              aria-label="Toggle mobile menu"
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
       
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg animate-fade-in py-4">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-background dark:bg-background shadow-lg animate-fade-in py-4">
           <nav className="flex flex-col container mx-auto px-4">
             <NavItem href="#overview" onClick={closeMobileMenu}>Overview</NavItem>
             <NavItem href="#who" onClick={closeMobileMenu}>Who</NavItem>
