@@ -27,7 +27,7 @@ const ManjiStory = () => {
   }, []);
   
   return (
-    <section className="py-20 relative bg-muted dark:bg-muted" id="why">
+    <section className="py-20 relative bg-secondary/70 relative" id="why">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-5xl font-display font-bold text-center mb-16">
           <span className="gradient-text">Why?</span>
