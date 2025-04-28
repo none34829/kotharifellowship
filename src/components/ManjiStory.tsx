@@ -58,7 +58,7 @@ const ManjiStory = () => {
                 alt="Manju" 
                 className="w-full h-auto"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-fellowship-gold/50 via-transparent to-transparent"></div>
               <div className="absolute bottom-4 left-4 right-4 text-white text-xl font-display font-medium">
                 Manju Kothari
               </div>
