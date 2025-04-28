@@ -5,12 +5,12 @@ const MarqueeSection = () => {
   const marqueeText = "BUILD • DREAM • CREATE • INNOVATE • GROW • LEAD • INSPIRE • TRANSFORM • ";
 
   return (
-    <div className="py-10 bg-fellowship-gold text-black overflow-hidden">
+    <div className="relative py-10 bg-primary dark:bg-primary/10 text-primary-foreground overflow-hidden">
       <div className="marquee-container">
-        <div className="marquee-content font-display font-bold text-4xl md:text-6xl whitespace-nowrap">
+        <div className="marquee-content whitespace-nowrap font-display font-bold text-4xl md:text-6xl">
           {marqueeText.repeat(4)}
         </div>
-        <div className="marquee-content font-display font-bold text-4xl md:text-6xl whitespace-nowrap">
+        <div className="marquee-content whitespace-nowrap font-display font-bold text-4xl md:text-6xl" aria-hidden="true">
           {marqueeText.repeat(4)}
         </div>
       </div>
