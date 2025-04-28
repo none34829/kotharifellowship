@@ -78,7 +78,7 @@ const Grantor = ({ name, title, linkedIn, delay }: GrantorProps) => {
 
 const GrantorsSection = () => {
   return (
-    <section className="py-20 bg-background relative" id="grantors">
+    <section className="py-20 relative" id="grantors">
       <div className="absolute inset-0 bg-grain-pattern opacity-40" />
       
       <div className="container mx-auto px-4 relative z-10">
