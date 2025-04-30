@@ -1,11 +1,10 @@
-
 import React from 'react';
 import { Card } from "@/components/ui/card";
 
 const OverviewItem = ({ title, description }: { title: string; description: string }) => (
-  <div className="p-6 border border-border rounded-xl bg-white/50 backdrop-blur-sm hover:shadow-md hover:shadow-fellowship-gold/10 transition-all duration-300 transform hover:-translate-y-1">
+  <div className="p-6 border border-border rounded-xl bg-white/50 dark:bg-gray-800 backdrop-blur-sm hover:shadow-md hover:shadow-fellowship-gold/10 transition-all duration-300 transform hover:-translate-y-1">
     <h3 className="text-lg font-display font-semibold mb-2">{title}</h3>
-    <p className="text-muted-foreground">{description}</p>
+    <p className="text-muted-foreground dark:text-gray-300">{description}</p>
   </div>
 );
 
@@ -18,15 +17,15 @@ const FellowshipOverview = () => {
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
               Fellowship at a <span className="highlight">glance</span>
             </h2>
-            <p className="text-muted-foreground mb-8">
+            <p className="text-muted-foreground dark:text-gray-300 mb-8">
               Everything you need to know about what we offer and why this fellowship exists.
             </p>
             <div className="hidden md:block perspective-card-container">
-              <Card className="perspective-card p-6 bg-fellowship-gold/10 border-fellowship-gold/20">
-                <div className="font-serif italic text-xl">
+              <Card className="perspective-card p-6 bg-fellowship-gold/10 border-fellowship-gold/20 dark:bg-fellowship-gold/20">
+                <div className="font-serif italic text-xl dark:text-white">
                   "Our grandmother Manju is one of the most creative and entrepreneurial people we know. In another life, she could have been the CEO of a Fortune 500 company."
                 </div>
-                <div className="mt-4 text-right font-medium">
+                <div className="mt-4 text-right font-medium dark:text-white">
                   — The Kothari Brothers
                 </div>
               </Card>

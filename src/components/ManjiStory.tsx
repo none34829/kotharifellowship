@@ -52,16 +52,12 @@ const ManjiStory = () => {
           </div>
           
           <div className={`w-full md:w-1/2 order-1 md:order-2 transition-all duration-1000 ${animated ? 'opacity-100' : 'opacity-0 -translate-x-20'}`}>
-            <div className="relative rounded-2xl overflow-hidden border-4 border-white shadow-xl">
+            <div className="relative overflow-hidden border-4 border-white shadow-xl rounded-full aspect-square">
               <img 
-                src="https://prod-files-secure.s3.us-west-2.amazonaws.com/1bf6599f-b473-4961-b7a4-c9d3f36ac476/64ccfae8-ce5a-478a-9cd1-81ef51b6bb29/5ac246c0-92a7-440f-bea6-0468fbfcfbc1.png" 
+                src="/5ac246c0-92a7-440f-bea6-0468fbfcfbc1.png" 
                 alt="Manju" 
-                className="w-full h-auto"
+                className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-              <div className="absolute bottom-4 left-4 right-4 text-white text-xl font-display font-medium">
-                Manju Kothari
-              </div>
             </div>
           </div>
         </div>

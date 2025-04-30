@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Check } from 'lucide-react';
 
@@ -34,7 +33,7 @@ const WhoSection = () => {
             <QualityTag>Indian National</QualityTag>
           </div>
           
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-10 shadow-lg border border-fellowship-gold/20 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          <div className="bg-white/80 dark:bg-black/90 backdrop-blur-sm rounded-2xl p-6 md:p-10 shadow-lg border border-fellowship-gold/20 dark:border-primary/30 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <h3 className="text-2xl font-display font-bold mb-4">What We Look For</h3>
             
             <ul className="space-y-4">
@@ -44,7 +43,7 @@ const WhoSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium mb-1">Demonstrated Creativity</h4>
-                  <p className="text-muted-foreground">Evidence of creative thinking in past projects or initiatives, no matter how small.</p>
+                  <p className="text-muted-foreground dark:text-foreground/90">Evidence of creative thinking in past projects or initiatives, no matter how small.</p>
                 </div>
               </li>
               
@@ -54,7 +53,7 @@ const WhoSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium mb-1">Clear Vision</h4>
-                  <p className="text-muted-foreground">A compelling idea or project with potential for meaningful impact.</p>
+                  <p className="text-muted-foreground dark:text-foreground/90">A compelling idea or project with potential for meaningful impact.</p>
                 </div>
               </li>
               
@@ -64,7 +63,7 @@ const WhoSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium mb-1">Passion for Learning</h4>
-                  <p className="text-muted-foreground">Hunger for knowledge and willingness to grow through challenges.</p>
+                  <p className="text-muted-foreground dark:text-foreground/90">Hunger for knowledge and willingness to grow through challenges.</p>
                 </div>
               </li>
               
@@ -74,7 +73,7 @@ const WhoSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium mb-1">Resilience</h4>
-                  <p className="text-muted-foreground">Ability to persist despite obstacles and setbacks.</p>
+                  <p className="text-muted-foreground dark:text-foreground/90">Ability to persist despite obstacles and setbacks.</p>
                 </div>
               </li>
             </ul>
