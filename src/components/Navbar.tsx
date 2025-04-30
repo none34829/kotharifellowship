@@ -67,18 +67,19 @@ const Navbar = () => {
             <NavItem href="#why">Why</NavItem>
             <NavItem href="#grantors">Grantors</NavItem>
             
-            <div className="ml-4 flex items-center">
+            <div className="ml-4 mr-4">
               <ThemeToggle />
-              <Button 
-                size="sm" 
-                className={`group rounded-full text-sm ${
-                  isScrolled ? 'bg-fellowship-gold hover:bg-fellowship-gold/90 text-black' : 'bg-white hover:bg-white/90 text-black dark:bg-fellowship-gold dark:hover:bg-fellowship-gold/90 dark:text-black'
-                }`}
-              >
-                <span>Apply now</span>
-                <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-1" />
-              </Button>
             </div>
+              
+            <Button 
+              size="sm" 
+              className={`group rounded-full text-sm ${
+                isScrolled ? 'bg-fellowship-gold hover:bg-fellowship-gold/90 text-black' : 'bg-white hover:bg-white/90 text-black dark:bg-fellowship-gold dark:hover:bg-fellowship-gold/90 dark:text-black'
+              }`}
+            >
+              <span>Apply now</span>
+              <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-1" />
+            </Button>
           </nav>
           
           {/* Mobile Menu Button */}

@@ -39,7 +39,7 @@ const Grantor = ({ name, title, linkedIn, delay }: GrantorProps) => {
   return (
     <div 
       ref={cardRef}
-      className="bg-white shadow-lg rounded-xl p-8 border border-border hover:border-fellowship-gold/30 transition-all duration-300 animate-fade-in"
+      className="bg-white dark:bg-[#121212] shadow-lg rounded-xl p-8 border-2 border-fellowship-gold/40 dark:border-fellowship-gold/50 hover:border-fellowship-gold/60 dark:hover:border-fellowship-gold/70 transition-all duration-300 animate-fade-in"
       style={{ animationDelay: `${delay}s`, transformStyle: 'preserve-3d', transition: 'transform 0.2s ease-out' }}
     >
       <div 
@@ -49,13 +49,13 @@ const Grantor = ({ name, title, linkedIn, delay }: GrantorProps) => {
         {name.charAt(0)}
       </div>
       <h3 
-        className="text-xl font-display font-bold mb-1"
+        className="text-xl font-display font-bold mb-1 dark:text-white"
         style={{ transform: 'translateZ(15px)' }}
       >
         {name}
       </h3>
       <p 
-        className="text-muted-foreground mb-4"
+        className="text-muted-foreground dark:text-gray-200 mb-4"
         style={{ transform: 'translateZ(10px)' }}
       >
         {title}

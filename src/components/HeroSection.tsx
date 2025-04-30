@@ -62,13 +62,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      
-      <div className="absolute bottom-8 left-0 right-0 flex justify-center">
-        <div className="animate-bounce">
-          <div className="w-1 h-8 bg-gradient-to-b from-fellowship-gold/0 to-fellowship-gold/60 rounded-full mx-auto" />
-          <div className="w-1 h-1 bg-fellowship-gold rounded-full mx-auto mt-2" />
-        </div>
-      </div>
     </section>
   );
 };

@@ -15,6 +15,9 @@ const ManjiStory = () => {
       
       if (isInView) {
         setAnimated(true);
+        element.classList.add('section-in-view');
+      } else {
+        element.classList.remove('section-in-view');
       }
     };
     
@@ -36,7 +39,7 @@ const ManjiStory = () => {
         <div id="manji-story" className="max-w-4xl mx-auto flex flex-col md:flex-row gap-8 lg:gap-16 items-center">
           <div className={`w-full md:w-1/2 order-2 md:order-1 transition-all duration-1000 ${animated ? 'opacity-100' : 'opacity-0 translate-x-20'}`}>
             <h3 className="text-2xl md:text-3xl font-display font-bold mb-4">
-              Inspired by <span className="highlight">Manju</span>
+              Inspired by <span className="highlight">Our Grandmother</span>
             </h3>
             <p className="text-lg mb-6 text-muted-foreground">
               This fellowship is inspired by our grandmother, <strong>Manju</strong>, who recently celebrated her 80th birthday. She's one of the most creative and entrepreneurial people we know.

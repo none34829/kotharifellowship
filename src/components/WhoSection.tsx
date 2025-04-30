@@ -2,9 +2,9 @@ import React from 'react';
 import { Check } from 'lucide-react';
 
 const QualityTag = ({ children }: { children: React.ReactNode }) => (
-  <div className="inline-flex items-center bg-secondary rounded-full px-3 py-1 text-sm mr-2 mb-2 animate-fade-in">
+  <div className="inline-flex items-center bg-secondary border-2 border-fellowship-gold/30 rounded-full px-3 py-1 text-sm mr-2 mb-2 animate-fade-in hover:border-fellowship-gold/50 transition-all duration-300 shadow-sm">
     <Check className="h-3 w-3 mr-1 text-fellowship-gold" />
-    <span>{children}</span>
+    <span className="font-medium">{children}</span>
   </div>
 );
 
@@ -33,7 +33,7 @@ const WhoSection = () => {
             <QualityTag>Indian National</QualityTag>
           </div>
           
-          <div className="bg-white/80 dark:bg-black/90 backdrop-blur-sm rounded-2xl p-6 md:p-10 shadow-lg border border-fellowship-gold/20 dark:border-primary/30 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          <div className="bg-white/80 dark:bg-black/90 backdrop-blur-sm rounded-2xl p-6 md:p-10 shadow-lg border-2 border-fellowship-gold/40 dark:border-primary/40 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <h3 className="text-2xl font-display font-bold mb-4">What We Look For</h3>
             
             <ul className="space-y-4">

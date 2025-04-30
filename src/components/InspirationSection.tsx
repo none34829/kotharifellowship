@@ -14,10 +14,10 @@ const InspirationItem = ({
     href={url}
     target="_blank"
     rel="noopener noreferrer"
-    className="block p-4 rounded-lg transition-all duration-300 hover:bg-white hover:shadow-md animate-fade-in"
+    className="block p-4 rounded-lg border-2 border-transparent transition-all duration-300 hover:bg-white hover:border-fellowship-gold/40 dark:hover:bg-[#121212] dark:hover:border-fellowship-gold/50 hover:shadow-md hover:shadow-fellowship-gold/10 dark:hover:shadow-fellowship-gold/20 animate-fade-in"
     style={{ animationDelay: `${index * 0.1}s` }}
   >
-    <div className="text-lg font-medium">{name}</div>
+    <div className="text-lg font-medium dark:text-white">{name}</div>
     <div className="flex items-center mt-1 text-sm text-fellowship-gold">
       <span>Learn more</span>
       <svg className="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
