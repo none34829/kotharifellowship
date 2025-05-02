@@ -95,19 +95,19 @@ const GrantorsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <Grantor
             name="Pranav Kothari"
-            title="Entrepreneur & Investor"
+            title="CEO, Educational Initiatives"
             linkedIn="https://www.linkedin.com/in/pranav-kothari/"
             delay={0.1}
           />
           <Grantor
             name="Akshay Kothari"
-            title="Entrepreneur & Investor"
+            title="Co-Founder, Notion"
             linkedIn="https://www.linkedin.com/in/akothari/"
             delay={0.3}
           />
           <Grantor
             name="Nikunj Kothari"
-            title="Entrepreneur & Investor"
+            title="Advisor & Angel Investor"
             linkedIn="https://www.linkedin.com/in/nikunjk/"
             delay={0.5}
           />
