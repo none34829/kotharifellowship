@@ -13,7 +13,7 @@ const Footer = () => {
             <p className="text-white/70">Empowering young Indian builders</p>
           </div>
           
-          <Button className="group bg-fellowship-gold hover:bg-fellowship-gold/90 text-black rounded-full">
+          <Button className="group bg-fellowship-gold hover:bg-fellowship-gold/90 text-black rounded-full" onClick={() => window.open('https://www.kotharifellowship.com/1374ace8044580dbb31af1a919cfd0e9', '_blank')}>
             <span>Apply now</span>
             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Button>

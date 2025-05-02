@@ -76,6 +76,7 @@ const Navbar = () => {
               className={`group rounded-full text-sm ${
                 isScrolled ? 'bg-fellowship-gold hover:bg-fellowship-gold/90 text-black' : 'bg-white hover:bg-white/90 text-black dark:bg-fellowship-gold dark:hover:bg-fellowship-gold/90 dark:text-black'
               }`}
+              onClick={() => window.open('https://www.kotharifellowship.com/1374ace8044580dbb31af1a919cfd0e9', '_blank')}
             >
               <span>Apply now</span>
               <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-1" />
@@ -109,7 +110,8 @@ const Navbar = () => {
             <div className="mt-4 mb-2 px-4">
               <Button 
                 size="sm" 
-                className="group rounded-full w-full text-sm bg-fellowship-gold hover:bg-fellowship-gold/90 text-black"
+                className="w-full group text-sm rounded-full bg-fellowship-gold hover:bg-fellowship-gold/90 text-black"
+                onClick={() => window.open('https://www.kotharifellowship.com/1374ace8044580dbb31af1a919cfd0e9', '_blank')}
               >
                 <span>Apply now</span>
                 <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-1" />

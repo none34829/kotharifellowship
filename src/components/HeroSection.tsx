@@ -1,7 +1,7 @@
-
 import React, { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import TypedText from './TypedText';
 
 const HeroSection = () => {
   const floatingElementRef = useRef<HTMLDivElement>(null);
@@ -41,7 +41,7 @@ const HeroSection = () => {
         <div className="flex flex-col items-center text-center">
           <div className="animated-border inline-block mb-6">
             <span className="relative z-10 text-xs md:text-sm font-medium tracking-wider px-4 py-2 uppercase">
-              Empower Young Indian Builders
+              Empowering Young Indian Builders
             </span>
           </div>
           
@@ -49,13 +49,16 @@ const HeroSection = () => {
             <span className="gradient-text">Kothari Fellowship</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 animate-fade-in-slow">
-            Providing grants and mentorship to young Indians under 25 years old who want to build, 
-            empowering them to turn ideas into reality, instead of being held back by societal norms.
-          </p>
+          <div className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            <TypedText 
+              text="Providing grants and mentorship to young Indians under 25 years old who want to build, empowering them to turn ideas into reality, instead of being held back by societal norms."
+              typingSpeed={30}
+              className="inline-block"
+            />
+          </div>
           
           <div className="animate-fade-in-slower">
-            <Button size="lg" className="group text-base rounded-full bg-fellowship-gold hover:bg-fellowship-gold/90 text-black">
+            <Button size="lg" className="group text-base rounded-full bg-fellowship-gold hover:bg-fellowship-gold/90 text-black" onClick={() => window.open('https://www.kotharifellowship.com/1374ace8044580dbb31af1a919cfd0e9', '_blank')}>
               <span>Apply now</span>
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
