@@ -1,11 +1,11 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Card } from '@/components/ui/card';
 
 const ManjiStory = () => {
-  const [animated, setAnimated] = useState(false);
   
   useEffect(() => {
+    // Only track scroll for the yellow underline animation
     const handleScroll = () => {
       const element = document.getElementById('manji-story');
       if (!element) return;
@@ -14,7 +14,6 @@ const ManjiStory = () => {
       const isInView = rect.top <= window.innerHeight * 0.8;
       
       if (isInView) {
-        setAnimated(true);
         element.classList.add('section-in-view');
       } else {
         element.classList.remove('section-in-view');
@@ -37,7 +36,7 @@ const ManjiStory = () => {
         </h2>
         
         <div id="manji-story" className="max-w-4xl mx-auto flex flex-col md:flex-row gap-8 lg:gap-16 items-center">
-          <div className={`w-full md:w-1/2 order-2 md:order-1 transition-all duration-1000 ${animated ? 'opacity-100' : 'opacity-0 translate-x-20'}`}>
+          <div className="w-full md:w-1/2 order-2 md:order-1">
             <h3 className="text-2xl md:text-3xl font-display font-bold mb-4">
               Inspired by <span className="highlight">Our Grandmother</span>
             </h3>
@@ -54,7 +53,7 @@ const ManjiStory = () => {
             </Card>
           </div>
           
-          <div className={`w-full md:w-1/2 order-1 md:order-2 transition-all duration-1000 ${animated ? 'opacity-100' : 'opacity-0 -translate-x-20'}`}>
+          <div className="w-full md:w-1/2 order-1 md:order-2">
             <div className="relative overflow-hidden border-4 border-white shadow-xl rounded-full aspect-square">
               <img 
                 src="/5ac246c0-92a7-440f-bea6-0468fbfcfbc1.png" 
